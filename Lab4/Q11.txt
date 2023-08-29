@@ -1,0 +1,1 @@
+If we have booking date then we can implement an index on that in booking table. By doing so we can easily find all the pessangers who travelled on a specific date as the table of booking will be very large and this can help to retrive the data faster. We can use one pointer for each day to track it down.

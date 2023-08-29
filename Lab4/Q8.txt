@@ -1,0 +1,8 @@
+8. Answer the following theoretical questions:
+a) How can you protect the credit card information in the database from hackers?
+ANSWER: To protect the credit card information in the database encryption can be used which is provided by mySQL or we can also store the credit card number into 2 or 3 different tables by breaking it and storing it in more scure table with limited-access password protected dirtectory.
+
+b) Give three advantages of using stored procedures in the database (and thereby execute them on the server) instead of writing the same functions in the front-end of the system (in for example java-script on a web-page)?
+ANSWER: 1: Reduce the network traffic between application and mysql server.
+		2: Reduce the duplication effort, if different applications need similar computation store procedures help with single unified program.
+		3: Performing calculation in the front-end of the system is not secure hence using stored procedure is more secure approach.

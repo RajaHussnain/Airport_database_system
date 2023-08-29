@@ -1,0 +1,18 @@
+a) 
+ANSWER: No, overbooking didn't occure because of check in add passenger where if nopassenger = 40 then reservation has reachead maximum number of passengers and can't add more passengers.
+
+b)
+ANSWER: Yes, overbooking can occure if payment of the one reservation and the second reservation on same flight occures simultaneously. 
+
+c)
+ANSWER: I got an error when I ran the query on multiple sessions because of primary key voilation. Given below:
+CALL addPayment(@a, "Sauron",7878787878)	Error Code: 1062. Duplicate entry '7878787878' for key 'b_creditcard.PRIMARY'
+
+d)
+ANSWER: By adding START TRANSACTION and COMMIT we can avoid overbooking. Also using LOCK TABLES we can lock the table when payment is under progress so system can't add more bookings.
+e.g:
+START TRANSACTION
+.....
+CALL addPayment(@a, "Sauron",7878787878);
+.....
+COMMIT
